@@ -4,7 +4,7 @@
 }
 
 html {
-    background-color: yellow;
+    background-color: #F1C70F;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -129,7 +129,6 @@ main {
     border-radius: 16px;
     margin: .5em;
     padding: 1em;
-    width: fit-content;
 }
 
 #Redação > h2 {
@@ -155,11 +154,13 @@ main {
     height: fit-content;
 }
 
-.Imagem > img {
+.Imagem > img, .ImagemFilme > img {
     width: 100%;
     height: fit-content;
     border-radius: 1em;
 }
+
+
 
 .Texto {
     display: flex;
@@ -191,18 +192,18 @@ main {
     font-size: 1em;
 }
 
-.Livro {
+.MomentoCultural {
     display: flex;
     flex-direction: column;
 }
 
-.Livro > .Imagem {
+.MomentoCultural > .Imagem {
     width: 50%;
     height: auto;
     margin: auto;
 }
 
-#Entrevista {
+#Campanha {
     margin: 1em 0;
     height: auto;
     display: flex;
@@ -211,14 +212,27 @@ main {
     align-items: center;
 }
 
-#Entrevista > p,iframe {
-    width: 70vw;
+#Campanha > img {
+    width: 80%;
+    border-radius: 1.5em;
+    margin: 2em;
 }
 
-iframe {
-    margin-top: 2em;
-    height: 75vh;
-    border-radius: 1.4em;
+#Campanha > p{
+    width: 80%;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#Campanha > iframe{
+    width: 80%;
+    height: 70vh;
+    border-radius: 1.5em;
+}
+
+#Mensagens{
+    margin: 2em;    
+    font-weight: bold;
 }
 
 #Integrantes {
@@ -287,7 +301,7 @@ footer {
 
 button:focus ~ ul{
     left: 0%;
-    background-color: yellow;
+    background-color: #F1C70F;
 }
 
 @media only screen and (max-width: 850px) {
@@ -335,6 +349,7 @@ button:focus ~ ul{
         width: 100%;
         height: 30vh;
     }
+
     .Conteudo > img, .Noticia > img, .Individual > img, .Imagem {
         width: 100%;
         height: 90%;
@@ -347,16 +362,16 @@ button:focus ~ ul{
         width: 100%;
     }
 
-    .Livro {
+    .MomentoCultural {
         display: flex;
         flex-direction: column;
     }
 
-    .Livro > .Texto > h1 {
+    .MomentoCultural > .Texto > h1 {
         margin-bottom: 0;
     }
 
-    .Livro > .Imagem {
+    .MomentoCultural > .Imagem {
         width: 100%;
     }
 
@@ -365,11 +380,30 @@ button:focus ~ ul{
         margin-top: 1em;
     }
 
-    iframe {
+
+    #Campanha > img {
+        margin: .75em;
+        width: 100%;
+    }
+
+    #Campanha > p{
+        width: 100%;
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    #Mensagens {
+        width: 90%;
+    }
+
+    #Mensagens > p{
+        margin: 2em;
+    }
+
+    #Campanha > iframe {
         margin-top: 2em;
         width: 100%;
         height: 35vh;
-        border-radius: 1.4em;
     }
 
     #Integrantes > img {
