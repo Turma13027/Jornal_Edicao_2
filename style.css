@@ -13,7 +13,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.Apresentações{
+.Apresentações, .Palestras{
     width: 85%;
     height: auto;
     border-radius: 1.5em;
@@ -392,6 +392,12 @@ button:focus ~ ul{
         margin-top: 1em;
     }
 
+    #Campanha{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
     #Campanha > img {
         margin: .75em;
